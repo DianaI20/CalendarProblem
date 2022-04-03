@@ -61,12 +61,23 @@ public class FileParser {
         return timeIntervals;
     }
 
+    /**
+     *
+     * @param timeInterval time interval as string e.g [12:00, 13:00]
+     * @return the time interval object parsed from the string
+     */
     private TimeInterval parseTimeInterval(String timeInterval){
         String temp = timeInterval.substring(1,timeInterval.length() - 1);
         String[] limits = temp.split(",");
         return new TimeInterval(parseTime(limits[0]), parseTime(limits[1]));
     }
 
+    /**
+     *
+     * @param time time value as string e.g: 12:00
+     * @return the LocalTime object coresponding to the string passed as parameter
+     *
+     */
     private LocalTime parseTime(String time){
         String[] times = time.split(":");
         return LocalTime.of(Integer.parseInt(times[0]),Integer.parseInt(times[1]));

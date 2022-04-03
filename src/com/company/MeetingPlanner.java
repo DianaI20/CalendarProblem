@@ -18,6 +18,7 @@ public class MeetingPlanner {
 
     /**
      * a method that will write the output in a file
+     * The method will compute the available meeting intervals and it will write in the file passed as parameter the output.
      */
     public void writeMeetingIntervals(){
         try {

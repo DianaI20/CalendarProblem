@@ -11,12 +11,6 @@ public class Calendar {
     private List<TimeInterval> meetingIntervals  = new ArrayList<>();
 
 
-    public Calendar(List<TimeInterval> timeInterval, LocalTime lowRangeLimit, LocalTime highRangeLimit) {
-        this.meetingIntervals = timeInterval;
-        this.meetingRange.setStartingTime( lowRangeLimit);
-        this.meetingRange.setEndingTime(highRangeLimit);
-    }
-
     public Calendar() {
     }
 

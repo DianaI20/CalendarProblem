@@ -1,1 +1,0 @@
-Available intervals for a 30 minutes meeting interval: [11:30,12:30] [15:00,16:00] [18:00,18:30] 

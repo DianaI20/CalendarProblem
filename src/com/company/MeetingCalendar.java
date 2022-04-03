@@ -21,6 +21,13 @@ public class MeetingCalendar extends Calendar {
         this.meetingTimeInMinutes = meetingTimeInMinutes;
     }
 
+    /**
+     *
+     * @param a the first localtime
+     * @param b the second localtime
+     * @return the minimum between two arguments of type LocalTime
+     */
+
     private LocalTime getMinimumTime(LocalTime a, LocalTime b) {
         if (a.isBefore(b)) {
             return a;
@@ -29,6 +36,12 @@ public class MeetingCalendar extends Calendar {
         }
     }
 
+    /**
+     *
+     * @param a the first localtime
+     * @param b the second localtime
+     * @return the maximum between two arguments of type LocalTime
+     */
     private LocalTime getMaximumTime(LocalTime a, LocalTime b) {
         if (a.isAfter(b)) {
             return a;
